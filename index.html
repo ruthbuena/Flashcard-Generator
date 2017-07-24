@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flashcards</title>
+    <link type="text/css" rel="stylesheet" href="assets/normalize.css">
+    <link type="text/css" rel="stylesheet" href="assets/skeleton.css">
+    <link type="text/css" rel="stylesheet" href="assets/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="assets/app.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <h1>flashcard generator</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="one-half column">
+                <label for="full-text-input">Full Text: </label>
+                <input type="text" class="u-full-width" id="full-text-input" placeholder="'The General keeps his armies up his sleevies.'">
+            </div>
+            <div class="one-half column">
+                <label for="cloze-text-input">Blanked Text: </label>
+                <input type="text" class="u-full-width" id="cloze-text-input" placeholder="'armies'">
+            </div>
+        </div>
+        <div class="row">
+            <button class="submit-button u-full-width button-primary">Submit Flash Card</button>
+        </div>
+        <div class="flashcard-container">
+            <!-- Append rows with full columns for flash cards here. -->
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
