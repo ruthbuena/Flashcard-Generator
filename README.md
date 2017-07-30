@@ -1,8 +1,7 @@
 # Flashcard-Generator
 
-HomeworkInstructions.md 4.83 KB RawBlameHistoryPermalink EditReplaceDelete
 Advanced JavaScript Assignment: Cloze Constructors
-Overview
+
 
 In this week's assignment, you will create the backend for a basic flashcard application.
 The backend will essentially constitute an API that allows users to create two types of flashcards.

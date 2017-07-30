@@ -1,0 +1,52 @@
+[
+  {
+    "type": "BasicCard",
+    "front": "What is the Git process to send/update changes to a Repository?",
+    "back": "Git Push"
+  },
+  {
+    "type": "ClozeCard",
+    "text": "When using multiple CSS files, which CSS file takes priority?",
+    "cloze": "The last CSS file link listed will take priority."
+  },
+  {
+    "type": "BasicCard",
+    "front": "Why is CSS reset so important?",
+    "back": "It is needed so that sites appear the same in all browsers."
+  },
+  {
+    "type": "BasicCard",
+    "front": "What is Bootstrap?",
+    "back": "A collection of prewritten CSS rules made in order to construct a website faster."
+  },
+  {
+    "type": "ClozeCard",
+    "text": "What is padding used for?",
+    "cloze": "It creates space between the content and border of an element."
+  },
+  {
+    "type": "BasicCard",
+    "front": "What command is used in the Git Bash Terminal to create a new file?",
+    "back": "touch"
+  },
+  {
+    "type": "ClozeCard",
+    "text": "What is a loop?",
+    "cloze": "A loop is a sequence of instructions that are continually repeated until a certain condition is reached."
+  },
+  {
+    "type": "BasicCard",
+    "front": "What is a Boolean?",
+    "back": "Data that can only be either True or False."
+  },
+  {
+    "type": "ClozeCard",
+    "text": "What is the best way to correct issues with an HTML file?",
+    "cloze": "Console it in the console tab of the Chrome Inspector"
+  },
+  {
+    "type": "ClozeCard",
+    "text": "What is Node.js?",
+    "cloze": "It is a JavaScript runtime built on Chrome's V8 JavaScript engine."
+  }
+]

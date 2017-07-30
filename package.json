@@ -1,7 +1,7 @@
 {
   "name": "flashcard-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Advanced JavaScript Assignment: Cloze Constructors",
   "main": "BasicCard.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ruthbuena/Flashcard-Generator/issues"
   },
-  "homepage": "https://github.com/ruthbuena/Flashcard-Generator#readme"
+  "homepage": "https://github.com/ruthbuena/Flashcard-Generator#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "inquirer": "^3.2.1"
+  }
 }
