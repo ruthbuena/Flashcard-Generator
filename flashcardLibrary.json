@@ -6,8 +6,8 @@
   },
   {
     "type": "ClozeCard",
-    "text": "When using multiple CSS files, which CSS file takes priority?",
-    "cloze": "The last CSS file link listed will take priority."
+    "text": "When using multiple CSS files, which CSS file takes priority- First file or Last?",
+    "cloze": "Last"
   },
   {
     "type": "BasicCard",
@@ -21,8 +21,8 @@
   },
   {
     "type": "ClozeCard",
-    "text": "What is padding used for?",
-    "cloze": "It creates space between the content and border of an element."
+    "text": "What is padding used to create space between the content and border of an element?",
+    "cloze": "space"
   },
   {
     "type": "BasicCard",
@@ -30,23 +30,23 @@
     "back": "touch"
   },
   {
-    "type": "ClozeCard",
+    "type": "BasicCard",
     "text": "What is a loop?",
     "cloze": "A loop is a sequence of instructions that are continually repeated until a certain condition is reached."
   },
   {
-    "type": "BasicCard",
-    "front": "What is a Boolean?",
-    "back": "Data that can only be either True or False."
+    "type": "ClozeCard",
+    "front": "A Boolean is data that can either be True or False?",
+    "back": "False"
   },
   {
     "type": "ClozeCard",
-    "text": "What is the best way to correct issues with an HTML file?",
-    "cloze": "Console it in the console tab of the Chrome Inspector"
+    "text": "The best way to correct issues with an HTML file in by using the console in Chrome Inspector?",
+    "cloze": "console"
   },
   {
     "type": "ClozeCard",
-    "text": "What is Node.js?",
-    "cloze": "It is a JavaScript runtime built on Chrome's V8 JavaScript engine."
+    "text": "Node is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
+    "cloze": "Node"
   }
 ]
