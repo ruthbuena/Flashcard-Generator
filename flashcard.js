@@ -3,10 +3,13 @@ var BasicCard = require('./BasicCard.js');
 var ClozeCard = require('./ClozeCard.js');
 var library = require('./flashcardLibrary.json');
 var colors = require('colors');
+var fs = require ('fs');
 
 var drawCard;
 var playerCard;
 var count = 0;
+
+// Function to begin Flashcard generator
 function letsStart() {
   inquirer.prompt([{
     type: "list",
@@ -16,35 +19,36 @@ function letsStart() {
   }]).then(function(answer) {
     var waitMsg;
 
+// Options to switch to create, use all, random, shuffle, show all or exit
     switch (answer.menuOptions) {
 
       case 'Create':
-        console.log("Ok lets make a new flashcard...");
+        console.log("Let's make a new flashcard...");
         waitMsg = setTimeout(createCard, 1000);
         break;
 
       case 'Use All':
-        console.log("OK lets run through the deck...");
+        console.log("Let's use all of the cards...");
         waitMsg = setTimeout(askQuestions, 1000);
         break;
 
       case 'Random':
-        console.log("OK I'll pick one random card from the deck...");
+        console.log("Let's pick one random card...");
         waitMsg = setTimeout(randomCard, 1000);
         break;
 
       case 'Shuffle':
-        console.log("OK I'll shuffle all the cards in the deck...");
+        console.log("Let's shuffle through all the cards in the deck...");
         waitMsg = setTimeout(shuffleDeck, 1000);
         break;
 
       case 'Show All':
-        console.log("OK I'll print all cards in the deck to your screen...");
+        console.log("I'll show you all the cards...");
         waitMsg = setTimeout(showCards, 1000);
         break;
 
       case 'Exit':
-        console.log("Thank you for using the Flashcard-Generator")
+        console.log("Goodbye")
         return;
         break;
 
@@ -58,7 +62,7 @@ function letsStart() {
 
 letsStart();
 
-
+// Create a card - user will need to select Basic or Cloze card
 function createCard() {
   inquirer.prompt([{
         type: "list",
@@ -113,13 +117,13 @@ function createCard() {
         } else {
           inquirer.prompt([{
               type: "input",
-              message: "Please type out the full text of your statement (remove cloze in next step).",
+              message: "Please type out the full text of your flashcard (we'll remove the cloze portion in the next step).",
               name: "text"
             },
 
             {
               type: "input",
-              message: "Please type the portion of text you want to cloze, replacing it with '...'.",
+              message: "Please type the portion of text you want to cloze(remove from the card) and replace it with '...'.",
               name: "cloze"
             }
 
@@ -191,6 +195,7 @@ function askQuestions() {
   }
 };
 
+// Shuffle for Flashcard
 function shuffleDeck() {
   newDeck = library.slice(0);
   for (var i = library.length - 1; i > 0; i--) {
@@ -206,6 +211,7 @@ function shuffleDeck() {
   console.log(colors.cyan("The deck of flashcards have been shuffled"));
 }
 
+// Select Random Flashcard
 function randomCard() {
   var randomNumber = Math.floor(Math.random() * (library.length - 1));
 
@@ -231,6 +237,7 @@ function randomCard() {
 
 };
 
+// Show all Flashcards that have been created- these will save onto the flashcardLibrary.json file as cards are added
 function showCards() {
 
   var library = require("./flashcardLibrary.json");
